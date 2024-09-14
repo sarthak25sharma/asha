@@ -11,7 +11,7 @@ const Hero = () => {
   const [transcript, setTranscript] = useState('');  // Store the transcript
   const [location, setLocation] = useState(null); // Store the location data
   const [area, setArea] = useState(null); // Store the area information
-
+  const [showModal, setShowModal] = useState(false);
   const normalize = (word) => stemmer(word.toLowerCase());
 
   // Function to handle voice input
@@ -56,10 +56,34 @@ const Hero = () => {
 
     // If two or more trigger words are found, analyze the context
     if (triggerCount > 0) {
-      alert("Are you safe?");
+      setShowModal(true);
     } 
     analyzeContext(sentence);
   };
+  const handleModalClose = (answer) => {
+    setShowModal(false);
+    if (answer === 'no') {
+      sendHelpEmail();  // Call the function to send the help email if unsafe
+    }
+  };
+
+  async function sendHelpEmail() {
+    try {
+      const response = await fetch('http://localhost:5000/send-help-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ message: 'Urgent help needed. Please help me!' })
+      });
+
+      const result = await response.json();
+      alert("Help mail sent successfully!")
+    } catch (error) {
+      console.error('Error sending email:', error);
+      alert('An error occurred while trying to send the email.');
+    }
+  }
 
   async function analyzeContext(sentence) {
     try {
@@ -200,6 +224,17 @@ const Hero = () => {
         </div>
         {/* <button className='' onClick={saveTranscript}>Save Transcript as .txt</button> */}
       </div>
+      {showModal && (
+  <>
+    <div className="modal-overlay" onClick={() => handleModalClose('no')}></div>
+    <div className="modal">
+      <p>Are you safe?</p>
+      <button onClick={() => handleModalClose('yes')}>Yes</button>
+      <button onClick={() => handleModalClose('no')}>No</button>
+    </div>
+  </>
+)}
+
     </div>
   );
 };
