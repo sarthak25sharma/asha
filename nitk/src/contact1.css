@@ -1,0 +1,171 @@
+.contacts{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: #B56060;
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "SF Pro";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 590;
+  line-height: 50.556px; /* 105.324% */
+}
+.cardc{
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 19px;
+  display: inline-flex;
+  padding: 32px 20px 20px 14px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.68);
+  background: var(--white-shade-opacity-10, rgba(255, 255, 255, 0.10));
+  box-shadow: 0px 15px 26px 0px rgba(29, 29, 29, 0.20), 1px -1px 2px 0px rgba(255, 255, 255, 0.11) inset, 0px 2px 2px 0px rgba(255, 255, 255, 0.25) inset;
+  backdrop-filter: blur(50px);
+}
+.contact-name{
+  color: #B56060;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "SF Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21.392px; /* 133.703% */
+}
+.contact-name p{
+  color: #E9D0D0;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "SF Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21.392px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.contact-card {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  margin: auto;
+}
+
+.contact-info {
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.contact-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #b84f4f;
+}
+
+.contact-relation {
+  color: #d4d4d4;
+  font-size: 14px;
+}
+
+.actions {
+  margin-bottom: 20px;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.live-location {
+  background-color: #b84f4f;
+}
+
+.call {
+  background-color: #c4c4c4;
+}
+
+.email, .sms {
+  background-color: #b84f4f;
+}
+
+.action-text {
+  font-size: 16px;
+  color: #b84f4f;
+}
+
+.action.disabled .action-text {
+  color: #c4c4c4;
+}
+
+.other-contacts {
+  border-top: 1px solid #b84f4f;
+}
+
+.contact-entry {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.contact-entry:not(:last-child) {
+  border-bottom: 1px solid #b84f4f;
+  padding-bottom: 10px;
+}
+
+.contact-text {
+  font-size: 16px;
+  color: #b84f4f;
+  margin-right: 10px;
+}
+
+.relation-text {
+  color: #c4c4c4;
+  font-size: 14px;
+}
+.contact-card2{
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  margin: auto;
+}
+  
+
+  

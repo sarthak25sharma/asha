@@ -1,0 +1,77 @@
+/* General resets */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Container for the button group */
+  .info-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 235, 235, 0.8);
+    border-radius: 40px;
+    padding: 10px 20px;
+    width: 450px;
+    margin: 50px auto;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Link Button Styles */
+  .button-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 8px 20px;
+    background-color: transparent;
+  }
+  
+  .button-section:hover {
+    background-color: rgba(184, 79, 79, 0.1);
+    border-radius: 40px;
+  }
+  
+  /* Icons Styling */
+  .icon {
+    font-size: 24px;
+    color: #b84f4f;
+    margin-right: 10px;
+  }
+  
+  .phone-icon:before {
+    content: '\260E'; /* Unicode for phone icon */
+  }
+  
+  .user-icon:before {
+    content: '\1F464'; /* Unicode for user icon */
+  }
+  
+  .home-icon:before {
+    content: '\1F3E0'; /* Unicode for home icon */
+  }
+  
+  /* Text within the button */
+  .button-text {
+    font-size: 16px;
+    color: #b84f4f;
+  }
+  
+  /* Divider between buttons */
+  .divider {
+    height: 24px;
+    width: 1px;
+    background-color: rgba(184, 79, 79, 0.5);
+    margin: 0 10px;
+  }
+  
+  /* Home button styling (specific) */
+  .home-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  

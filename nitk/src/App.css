@@ -43,107 +43,96 @@ button {
   }
 }
 
-/* Phone Container */
+.circular-button {
+  position: absolute;
+  top: 55%; /* 3/4th distance from the top */
+  left: 50%; /* center horizontally */
+  transform: translate(-50%, -50%); /* adjust for button size */
+  border: none;
+  border-radius: 50%; /* make the button circular */
+  padding: 20px; /* adjust padding to fit your image */
+  background-color: #fff; /* white background */
+  cursor: pointer; /* change cursor to pointer on hover */
+}
+
+.circular-button img {
+  width: 100%; /* adjust image size to fit within the button */
+  height: 100%;
+  object-fit: cover; /* scale image to fit within the button */
+  
+  border-radius: 50%; /* make the image circular */
+}
 .phone {
-  width: 400px;
-  height: 600px;
+  /* iPhone 14 dimensions */
+  width: 390px; /* width of iPhone 14 */
+  height: 844px; /* height of iPhone 14 */
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin: 50px auto;
   position: relative;
-  background-color: "#E9D5D0";
+  background-color: #E9D5D0;
   padding-top: 20px; /* Added padding to push content down */
   background: linear-gradient(
     to bottom,
-    #ffffff 0%,
-    #ffffff 80%,
-    #b56060 100%
-  ); /* Added gradient background */
+    #f7f7f7 0%, /* Lighter white color */
+    #E9D5D0 80%, /* Slightly darker white color */
+    #B56060 100%, /* Light gray color */
+  );
+  /* Add overflow hidden to prevent content from overflowing */
+  overflow: hidden;
 }
-
-/* Phone Content */
-.phone-content {
-  padding: 20px;
-}
-
-/* Logo Image */
-.logoimg {
-  width: 100px;
-  border-radius: 100%;
-}
-
-/* Button Styles */
-.phone-buttons {
+.top-h{
   position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.phone-button {
-  width: 40px;
-  height: 40px;
-  border: none;
-  border-radius: 100%;
-  margin: 0 10px;
-  background-color: #B56060;
-  background-size: contain;
-}
-
-.background-button {
-  background-color: white;
-}
-
-/* Main Heading */
-.main_heading {
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 20px;
+  top: 22%; /* 3/4th distance from the top */
   color: #B56060;
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "SF Pro";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 590;
+  line-height: 50.556px; /* 105.324% */
 }
-
-/* Card */
-.card {
+.listen{
+  position: absolute;
+  top: 67%; /* 3/4th distance from the top */
+  left:33%;
+  color: #B56060;
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "SF Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 590;
+  line-height: 50.556px; /* 105.324% */
+}
+.listen2{
+  position: absolute;
+  top: 69%; /* 3/4th distance from the top */
+  left:35%;
+  color: #B56060;
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "SF Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 590;
+  line-height: 50.556px; /* 105.324% */
+}
+.location-info{
+  position: absolute;
+  top: 7%; /* 3/4th distance from the top */
+  left:13%;
   display: flex;
+  width: 300px;
+  height: 56px;
+  padding: 8px;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-.card img {
-  width: 100px;
-  height: 100px;
-}
-
-/* Text Style */
-.text-black {
-  font-size: 16px;
-  font-weight: bold;
-  color: #B56060;
-}
-
-/* Menu Button */
-.menu-buttonz {
-  display: inline-flex;
-  margin-bottom: 10px;
-  padding: 10px 24px;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-  border-radius: 9999px;
-  border: 1px solid rgba(255, 255, 255, 0.44);
-  box-shadow: 0 15px 26px rgba(29, 29, 29, 0.20);
-  backdrop-filter: blur(50px);
-}
-
-/* Location Info */
-.location-info {
-  width: 200px;
-  height: 30px;
-  margin-top: 20px;
-  font-size: 16px;
-  color: #333;
-  background-color: #f3bdbd;
-  border-radius: 5%;
+  gap: 12px;
+  flex-shrink: 0;
+  border-radius: 64px;
+  background: #B56060;
+  /* Inner Shadow 1 */
+  box-shadow: 3px 6px 8px 0px rgba(1, 1, 20, 0.08) inset;
 }

@@ -67,15 +67,15 @@ function Hero() {
   }, [listening]); // Re-run effect if listening state changes
 
   // Function to save the transcript as a text file
-  const saveTranscript = () => {
-    const blob = new Blob([transcript], { type: 'text/plain' });
-    const link = document.createElement('a');
-    link.href = URL.createObjectURL(blob);
-    link.download = 'transcript.txt';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  // const saveTranscript = () => {
+  //   const blob = new Blob([transcript], { type: 'text/plain' });
+  //   const link = document.createElement('a');
+  //   link.href = URL.createObjectURL(blob);
+  //   link.download = 'transcript.txt';
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
 
   // Function to get the current location
   const getLocation = () => {
@@ -110,33 +110,31 @@ function Hero() {
   };
 
   return (
-    <div className='poppins-regular'>
-    <div className="phone poppin">
-      <div className="phone-content">
+    <div>
+      <div className='phone'> 
         <button className='location-info' onClick={getLocation}>Get Current Location</button>
-        {location && (
-          <div >
-            <p>Area: {area}</p>
-          </div>
-        )}
-
-        <div className='background-button '>
-          <button onClick={() => setListening(!listening)}>
-            <img className='logoimg' src={logo} alt="asha logo" />
-          </button>
+          {location && (
+            <div >
+              <p>Area: {area}</p>
+            </div>
+          )} 
+        <div className='top-h'>
+          <h2>tap to enable safe mode</h2>
         </div>
-        <div className='text-black'>
-          {listening ? 'Stop Listening' : 'Start Listening'}
+        <button className="circular-button"  onClick={() => setListening(!listening)}>
+            <img src={logo} alt="Image"/>
+        </button>
+        <div className='listen'>
+          {listening ? 'stop listening' : 'start listening'}
         </div>
+        <div className='listen2'>
+            <p>Transcript: {transcript}</p>
+        </div>
+        
+        {/* <button  className =''onClick={saveTranscript}>Save Transcript as .txt</button> */}
 
-        <p>Transcript: {transcript}</p>
-
-        <button onClick={saveTranscript}>Save Transcript as .txt</button>
       </div>
-
-      
     </div>
-    </div>  
   );
 }
 

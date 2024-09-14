@@ -1,71 +1,78 @@
-.contacts{
-    color: #B56060;
-    text-align: center;
-    font-feature-settings: 'liga' off, 'clig' off;
-    font-family: "SF Pro";
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 590;
-    line-height: 50.556px; /* 105.324% */
-}
-
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
   
+  .profile-card {
 
-  
-.contact-card {
+    position: absolute;
+    top: 25%;
+    left: 7%;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    width: 340px;
+    height: 400px;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 90%;
-    margin: 5 auto;
-}
+    margin: auto;
+    text-align: center;
+  }
   
-.contact-header {
-    display: flex;
-    align-items: center;
+  .profile-info {
     margin-bottom: 20px;
-}
+  }
   
-.contact-icon {
-    width: 50px;
-    height: 50px;
-    background-color: #f2dede;
+  .profile-image {
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    display: inline-block;
-}
-  
-  .contact-info {
-    margin-left: 15px;
+    margin-bottom: 10px;
   }
   
-  .contact-info h3 {
-    margin: 0;
-    color: #b94a48;
-    font-size: 18px;
-  }
-  
-  .contact-info p {
-    margin: 0;
-    color: #e0e0e0;
-    font-size: 14px;
-  }
-  
-  .actions {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
-  }
-  
-  .action-item {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    color: #b94a48;
-  }
-  
-  .action-item.active {
+  .profile-name {
+    font-size: 24px;
     font-weight: bold;
+    color: #b84f4f;
+    margin-bottom: 5px;
   }
   
+  .profile-title {
+    color: #d4d4d4;
+    font-size: 16px;
+  }
+  
+  .profile-details {
+    text-align: left;
+  }
+  
+  .detail-label {
+    font-size: 16px;
+    color: #b84f4f;
+    margin-bottom: 5px;
+  }
+  
+  .detail-value {
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+    color: #b84f4f;
+  }
+  
+  .medical-history {
+    list-style: none;
+    margin: 5px 0 10px 0;
+  }
+  
+  .medical-history li {
+    font-size: 16px;
+    color: #b84f4f;
+  }
+  
+  .birthmark-detail {
+    font-size: 16px;
+    color: #b84f4f;
+    margin-top: 5px;
+  }
   
