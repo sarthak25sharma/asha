@@ -1,0 +1,252 @@
+[
+    {"text": "Please help me, I'm in danger!", "label": "help"},
+    {"text": "Someone is following me, I need help!", "label": "help"},
+    {"text": "Can you assist me with this situation?", "label": "help"},
+    {"text": "I can't do this alone, I need help.", "label": "help"},
+    {"text": "I need urgent assistance right now!", "label": "help"},
+    {"text": "Can someone come and help me?", "label": "help"},
+    {"text": "I am trapped, help!", "label": "help"},
+    {"text": "This is an emergency, please help!", "label": "help"},
+    {"text": "I need someone to assist me urgently.", "label": "help"},
+    {"text": "Can you help me resolve this?", "label": "help"},
+    {"text": "Please come quickly, I need your help!", "label": "help"},
+    {"text": "I'm struggling, can you help?", "label": "help"},
+    {"text": "Can someone come to my aid?", "label": "help"},
+    {"text": "I can't get out, please help!", "label": "help"},
+    {"text": "I need medical assistance, hurry!", "label": "help"},
+    {"text": "Is anyone there who can help me?", "label": "help"},
+    {"text": "I can't handle this alone, help me!", "label": "help"},
+    {"text": "Help me find my way out!", "label": "help"},
+    {"text": "Help! I'm feeling lost!", "label": "help"},
+    {"text": "Can you guide me out of this?", "label": "help"},
+    {"text": "This is overwhelming, help me, please.", "label": "help"},
+    {"text": "I need backup, please come quickly.", "label": "help"},
+    {"text": "Send help immediately, I'm in trouble.", "label": "help"},
+    {"text": "I can't fix this alone, I need your help.", "label": "help"},
+    {"text": "Please provide me with help right now.", "label": "help"},
+    {"text": "Assist me, this is urgent!", "label": "help"},
+    {"text": "Help! Something's gone terribly wrong.", "label": "help"},
+    {"text": "I need help to escape this situation.", "label": "help"},
+    {"text": "This is serious, can you help me?", "label": "help"},
+    {"text": "Please come fast, I need your help now.", "label": "help"},
+    {"text": "Stop touching me!", "label": "molestation"},
+    {"text": "Leave me alone! Don't come near me!", "label": "molestation"},
+    {"text": "Don't harass me, this isn't right!", "label": "molestation"},
+    {"text": "Get away from me now!", "label": "molestation"},
+    {"text": "You're invading my personal space, stop!", "label": "molestation"},
+    {"text": "This is inappropriate, back off!", "label": "molestation"},
+    {"text": "I said no, stop now!", "label": "molestation"},
+    {"text": "Don't touch me like that!", "label": "molestation"},
+    {"text": "Stop harassing me, I don't feel safe.", "label": "molestation"},
+    {"text": "Don't you dare come near me again.", "label": "molestation"},
+    {"text": "You're crossing boundaries, stop now!", "label": "molestation"},
+    {"text": "I feel violated, stop!", "label": "molestation"},
+    {"text": "Back off, you're making me uncomfortable.", "label": "molestation"},
+    {"text": "No means no, stop what you're doing!", "label": "molestation"},
+    {"text": "This is harassment, please stop!", "label": "molestation"},
+    {"text": "Don't touch me there, this is wrong!", "label": "molestation"},
+    {"text": "Stop bothering me, I'm uncomfortable.", "label": "molestation"},
+    {"text": "Leave me alone, you're scaring me.", "label": "molestation"},
+    {"text": "I don't like this, stop right now!", "label": "molestation"},
+    {"text": "You're making me feel unsafe, back away.", "label": "molestation"},
+    {"text": "I am so angry right now!", "label": "anger"},
+    {"text": "This is unfair and I'm furious!", "label": "anger"},
+    {"text": "I can't believe this, I'm outraged!", "label": "anger"},
+    {"text": "This makes me so mad!", "label": "anger"},
+    {"text": "I'm fuming with anger!", "label": "anger"},
+    {"text": "I am livid, this is unacceptable!", "label": "anger"},
+    {"text": "I can't stand this anymore, I'm enraged!", "label": "anger"},
+    {"text": "I'm boiling with anger, this is too much!", "label": "anger"},
+    {"text": "This situation makes me want to scream!", "label": "anger"},
+    {"text": "I'm infuriated, this is ridiculous!", "label": "anger"},
+    {"text": "How dare they do this, I'm furious!", "label": "anger"},
+    {"text": "I'm seeing red, I can't handle this!", "label": "anger"},
+    {"text": "I'm so angry, I can't calm down.", "label": "anger"},
+    {"text": "I'm outraged, this is so wrong!", "label": "anger"},
+    {"text": "This is infuriating, I can't believe it!", "label": "anger"},
+     {"text": "I am terrified and scared.", "label": "fear"},
+    {"text": "I feel so afraid, I can't move.", "label": "fear"},
+    {"text": "Something bad is going to happen, I'm scared.", "label": "fear"},
+    {"text": "I'm really frightened, I don't feel safe.", "label": "fear"},
+    {"text": "This situation is terrifying.", "label": "fear"},
+    {"text": "I feel a sense of dread and fear.", "label": "fear"},
+    {"text": "I'm shivering with fear, I can't take it.", "label": "fear"},
+    {"text": "I'm so scared, I don't know what to do.", "label": "fear"},
+    {"text": "This is making me extremely uneasy.", "label": "fear"},
+    {"text": "I feel an overwhelming sense of fear.", "label": "fear"},
+    {"text": "I'm horrified, this can't be happening!", "label": "fear"},
+    {"text": "This is terrifying, I'm frozen in fear.", "label": "fear"},
+    {"text": "I'm terrified for my safety.", "label": "fear"},
+    {"text": "I don't feel safe at all, this is frightening.", "label": "fear"},
+    {"text": "I'm panicking, I can't escape this fear.", "label": "fear"}
+   
+  ]
+  [
+  
+    {
+      "text": "I really don’t know what to do next. Things have spiraled out of control, and I feel completely powerless to change them.",
+      "label": "help"
+    },
+    {
+      "text": "I'm feeling so overwhelmed right now, and everything is falling apart. I don't think I can get through this on my own.",
+      "label": "help"
+    },
+    {
+      "text": "Nothing seems to be going right, and I don’t know where to turn. I wish someone could step in and make things better.",
+      "label": "help"
+    },
+    {
+      "text": "I’ve tried everything, but I’m stuck. It feels like I’m trapped in a situation I can’t escape from, and I don’t know what to do.",
+      "label": "help"
+    },
+    {
+      "text": "I feel like I'm drowning in everything that’s happening, and I can't find my way out. I could use some serious support right now.",
+      "label": "help"
+    },
+    {
+      "text": "There are just too many problems at once. I can't think clearly or figure out how to deal with this situation. I need someone to guide me.",
+      "label": "help"
+    },
+    {
+      "text": "It feels like the walls are closing in on me, and I’m running out of options. There’s no way I can manage this by myself.",
+      "label": "help"
+    },
+    {
+      "text": "Everything's piling up, and I’m feeling lost in it all. I just need someone to help me figure out where to go from here.",
+      "label": "help"
+    },
+    {
+      "text": "I don’t have the strength to handle this alone. Every move I make feels wrong, and I need a way to fix it.",
+      "label": "help"
+    },
+    {
+      "text": "I’ve been struggling for a while, but now it’s too much. If someone doesn’t intervene soon, I’m not sure how I’ll make it through.",
+      "label": "help"
+    },
+  
+   
+    {
+      "text": "I’ve asked you repeatedly to give me space, yet you keep ignoring me. This constant proximity is making me very uncomfortable.",
+      "label": "molestation"
+    },
+    {
+      "text": "I don't know why you think this is okay, but it’s making me feel uneasy. You need to understand boundaries.",
+      "label": "molestation"
+    },
+    {
+      "text": "You’re pushing limits that shouldn’t be crossed, and it’s making the situation unbearable. It needs to stop right away.",
+      "label": "molestation"
+    },
+    {
+      "text": "Your behavior is getting out of control, and I don’t feel comfortable with what’s happening. This shouldn’t be happening.",
+      "label": "molestation"
+    },
+    {
+      "text": "You’re way too close, and it’s becoming more than just an innocent gesture. I need you to stop crossing lines.",
+      "label": "molestation"
+    },
+    {
+      "text": "Every step you take closer is making this worse. You’ve gone too far, and it’s no longer acceptable.",
+      "label": "molestation"
+    },
+    {
+      "text": "The way you’re behaving is completely inappropriate. It’s leaving me feeling uneasy, and you need to reconsider your actions.",
+      "label": "molestation"
+    },
+    {
+      "text": "Your actions are sending off all kinds of alarms in my mind. You’re not respecting the boundaries that are clearly in place.",
+      "label": "molestation"
+    },
+    {
+      "text": "You’ve stepped into a zone where I no longer feel okay with what’s happening. This behavior has to change immediately.",
+      "label": "molestation"
+    },
+    {
+      "text": "Your constant attempts to get closer have gone from annoying to deeply troubling. I don’t feel safe in this situation.",
+      "label": "molestation"
+    },
+  
+    
+    {
+      "text": "I can't believe I’ve been put in this situation again. It’s beyond frustrating, and I’m ready to break from this stress.",
+      "label": "anger"
+    },
+    {
+      "text": "I’ve reached the point where my patience is wearing thin. This situation has become unbearable, and I can't stay calm anymore.",
+      "label": "anger"
+    },
+    {
+      "text": "I’ve been holding back for so long, but now it’s impossible. I’m ready to explode from everything that’s happened.",
+      "label": "anger"
+    },
+    {
+      "text": "The frustration has been building up, and now it’s too much. I can't keep pretending like everything is okay anymore.",
+      "label": "anger"
+    },
+    {
+      "text": "This is getting out of hand, and I’ve just about had it. I’m on the verge of losing control of my emotions.",
+      "label": "anger"
+    },
+    {
+      "text": "I’m so tired of being patient, and this is the final straw. I don’t think I can keep this rage in check any longer.",
+      "label": "anger"
+    },
+    {
+      "text": "This level of inconsideration is just too much. I’ve never been so close to losing my cool in a situation before.",
+      "label": "anger"
+    },
+    {
+      "text": "I've been dealing with this for far too long, and the anger has reached a tipping point. I can't remain composed any longer.",
+      "label": "anger"
+    },
+    {
+      "text": "I’ve tried to remain reasonable, but this is beyond what anyone should tolerate. I’m about to lash out if things don't change.",
+      "label": "anger"
+    },
+    {
+      "text": "There’s only so much I can take before everything breaks down. This is pushing me far beyond my limits.",
+      "label": "anger"
+    },
+  
+  
+    {
+      "text": "Something just doesn’t feel right, and my instincts are screaming at me. I’m on edge, and it’s difficult to shake this feeling.",
+      "label": "fear"
+    },
+    {
+      "text": "I feel a creeping sense of danger in the air, and every moment it’s getting worse. I can't shake the feeling that something’s wrong.",
+      "label": "fear"
+    },
+    {
+      "text": "It’s like the atmosphere has completely changed, and every noise makes me jump. There’s a constant unease that won’t go away.",
+      "label": "fear"
+    },
+    {
+      "text": "I can’t explain why, but my heart is racing, and I feel like something bad is going to happen. There’s no escaping this dread.",
+      "label": "fear"
+    },
+    {
+      "text": "The more I think about it, the more I realize that everything about this situation feels off. I’m genuinely concerned.",
+      "label": "fear"
+    },
+    {
+      "text": "I feel this growing tension in my chest, and every second makes me more anxious. Something’s definitely not right.",
+      "label": "fear"
+    },
+    {
+      "text": "There’s an unsettling feeling hanging over me, and I can’t shake it. The environment around me is making me nervous.",
+      "label": "fear"
+    },
+    {
+      "text": "The longer this goes on, the more worried I get. I don’t feel safe, and my mind is racing with worst-case scenarios.",
+      "label": "fear"
+    },
+    {
+      "text": "Every little sound is making me jump, and I can’t relax. The tension is unbearable, and I’m not sure what to expect next.",
+      "label": "fear"
+    },
+    {
+      "text": "I don’t know what’s going on, but every instinct I have is telling me to be on guard. There’s a real sense of threat in the air.",
+      "label": "fear"
+    }
+  ]

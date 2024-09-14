@@ -43,6 +43,21 @@ button {
   }
 }
 
+@keyframes throbbing {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+}
+
 .circular-button {
   position: absolute;
   top: 55%; /* 3/4th distance from the top */
@@ -53,7 +68,16 @@ button {
   padding: 20px; /* adjust padding to fit your image */
   background-color: #fff; /* white background */
   cursor: pointer; /* change cursor to pointer on hover */
+  animation: throbbing 1.5s infinite ease-in-out; /* throbbing effect */
 }
+.circular-button.clicked {
+  background-color: green; /* Change to green when clicked */
+}
+
+.circular-button:hover {
+  background-color: #f0f0f0; /* optional hover effect */
+}
+
 
 .circular-button img {
   width: 100%; /* adjust image size to fit within the button */
@@ -132,7 +156,7 @@ button {
   gap: 12px;
   flex-shrink: 0;
   border-radius: 64px;
-  background: #B56060;
+  background: #fff;
   /* Inner Shadow 1 */
   box-shadow: 3px 6px 8px 0px rgba(1, 1, 20, 0.08) inset;
 }

@@ -4,30 +4,31 @@ import Contact_info from './contact.jsx';
 import Hero from './Hero.jsx';
 import './App.css';
 import './button-collection.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone, faUser, faHome } from '@fortawesome/free-solid-svg-icons';
 
 function Home() {
   return (
     <>
-      <div className="info-button">
-        <Link to="/contact" className="button-section">
-          <i className="icon phone-icon"></i>
-          <span className="button-text">Contacts</span>
-        </Link>
-        
-        <div className='home-button'>
-          <Link to="/hero" className='button-section'>
-            <i className='icon home-icon'></i>
-            <span className='button-text'>Home</span>
-          </Link>
-        </div>
-
-        <div className="divider"></div>
-
-        <Link to="/info" className="button-section">
-          <i className="icon user-icon"></i>
-          <span className="button-text">Medical Info</span>
+ <div className="info-button">
+      <Link to="/contact" className="button-section">
+        <FontAwesomeIcon icon={faPhone} className="icon phone-icon" />
+        <span className="button-text">Contacts</span>
+      </Link>
+      <div className="divider"></div>
+      <div className='home-button'>
+        <Link to="/hero" className='button-section'>
+          <FontAwesomeIcon icon={faHome} className='icon home-icon' />
+          <span className='button-text'>Home</span>
         </Link>
       </div>
+
+      <div className="divider"></div>
+      <Link to="/info" className="button-section">
+        <FontAwesomeIcon icon={faUser} className="icon user-icon" />
+        <span className="button-text">Medical Info</span>
+      </Link>
+    </div>
 
       <Routes>
         <Route path="/hero" element={<Hero key="hero" />} />
