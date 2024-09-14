@@ -1,0 +1,140 @@
+/* General Styles */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Keyframes */
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Animation for logo */
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Phone Container */
+.phone {
+  width: 300px;
+  height: 500px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 50px auto;
+  position: relative;
+  padding-top: 20px; /* Added padding to push content down */
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #ffffff 80%,
+    #b56060 100%
+  ); /* Added gradient background */
+}
+
+/* Phone Content */
+.phone-content {
+  padding: 20px;
+}
+
+/* Logo Image */
+.logoimg {
+  width: 100px;
+  border-radius: 100%;
+}
+
+/* Button Styles */
+.phone-buttons {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.phone-button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 100%;
+  margin: 0 10px;
+  background-color: #B56060;
+  background-size: contain;
+}
+
+.background-button {
+  background-color: white;
+}
+
+/* Main Heading */
+.main_heading {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #B56060;
+}
+
+/* Card */
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+}
+
+/* Text Style */
+.text-black {
+  font-size: 16px;
+  font-weight: bold;
+  color: #B56060;
+}
+
+/* Menu Button */
+.menu-buttonz {
+  display: inline-flex;
+  margin-bottom: 10px;
+  padding: 10px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.44);
+  box-shadow: 0 15px 26px rgba(29, 29, 29, 0.20);
+  backdrop-filter: blur(50px);
+}
+
+/* Location Info */
+.location-info {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+}

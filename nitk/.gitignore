@@ -1,0 +1,50 @@
+# Dependency directories
+node_modules/
+bower_components/
+
+# Build output
+build/
+dist/
+
+# Logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# IDEs and editors
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# npm package lock
+package-lock.json
+yarn.lock
+
+# Miscellaneous
+*.pem
+*.key
+*.crt
+
+# Coverage
+coverage/
+
+# Parcel cache
+.cache/
+.parcel-cache/
+
+# React Native
+.expo/
