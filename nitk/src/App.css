@@ -1,4 +1,5 @@
 /* General Styles */
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -16,6 +17,9 @@ button {
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
+}
+.body{
+   background-color: "#e9d5e9";
 }
 
 .logo:hover {
@@ -41,12 +45,13 @@ button {
 
 /* Phone Container */
 .phone {
-  width: 300px;
-  height: 500px;
+  width: 400px;
+  height: 600px;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin: 50px auto;
   position: relative;
+  background-color: "#E9D5D0";
   padding-top: 20px; /* Added padding to push content down */
   background: linear-gradient(
     to bottom,
@@ -134,7 +139,11 @@ button {
 
 /* Location Info */
 .location-info {
+  width: 200px;
+  height: 30px;
   margin-top: 20px;
   font-size: 16px;
   color: #333;
+  background-color: #f3bdbd;
+  border-radius: 5%;
 }

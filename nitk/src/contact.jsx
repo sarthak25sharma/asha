@@ -1,9 +1,14 @@
-
-
+import logo from './assets/main_button.png'; // Import the image
+import './App.css';
+import './contact.css'
 function Contact_info() {
     return (
-        <div>
-            <h1>hellllo</h1>
+        <div className='phone'>
+            <div className='divimg'>
+             <img className="contact-img" src={logo}></img>
+            </div>
+            
+
         </div>
     );
 }

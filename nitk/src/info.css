@@ -1,0 +1,71 @@
+.contacts{
+    color: #B56060;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "SF Pro";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 590;
+    line-height: 50.556px; /* 105.324% */
+}
+
+  
+
+  
+.contact-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    margin: 5 auto;
+}
+  
+.contact-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+  
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #f2dede;
+    border-radius: 50%;
+    display: inline-block;
+}
+  
+  .contact-info {
+    margin-left: 15px;
+  }
+  
+  .contact-info h3 {
+    margin: 0;
+    color: #b94a48;
+    font-size: 18px;
+  }
+  
+  .contact-info p {
+    margin: 0;
+    color: #e0e0e0;
+    font-size: 14px;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .action-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #b94a48;
+  }
+  
+  .action-item.active {
+    font-weight: bold;
+  }
+  
+  

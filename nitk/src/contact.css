@@ -1,0 +1,12 @@
+.contact-img{
+    width: 96px;
+    height: 96px;
+    flex-shrink: 0;
+    border-radius: 96px;
+
+}
+.divimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
