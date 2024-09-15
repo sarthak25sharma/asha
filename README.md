@@ -1,5 +1,5 @@
 # ASHA Automated SOS and Help APP
-#Code is in Master branch
+# Code is in Master branch
 ## Overview
 
 ASHA (Automated SOS and Help App) is a sophisticated application designed to enhance user safety through automated SOS alerts and contextual analysis of voice inputs. Leveraging modern technologies and machine learning, ASHA aims to provide timely help and support in emergency situations.
