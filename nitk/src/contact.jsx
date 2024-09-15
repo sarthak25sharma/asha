@@ -1,6 +1,7 @@
 
 import './App.css';
 import './contact1.css'
+import logo from './assets/main_button.png'; // Import the image
 function Contact_info() {
     return (
         <div  className='phone'>
@@ -11,7 +12,7 @@ function Contact_info() {
     <div className="contact-card">
       <div className="contact-info">
         <img
-          src="https://via.placeholder.com/80"
+          src={logo}
           alt="Contact"
           className="contact-image"
         />
@@ -56,13 +57,13 @@ function Contact_info() {
     <div className="contact-card2">
       <div className="contact-info">
         <img
-          src="https://via.placeholder.com/80"
+          src={logo}
           alt="Contact"
           className="contact-image"
         />
         <div>
-          <h3 className="contact-name">Omansh Arora</h3>
-          <p className="contact-relation">Brother</p>
+          <h3 className="contact-name">Dhruv</h3>
+          <p className="contact-relation">Friend</p>
         </div>
       </div>
 
@@ -77,11 +78,7 @@ function Contact_info() {
           <span className="contact-text">Contact #2</span>
           <span className="relation-text">Relation</span>
         </div>
-        <div className="contact-entry">
-          <span className="icon user"></span>
-          <span className="contact-text">Contact #3</span>
-          <span className="relation-text">Relation</span>
-        </div>
+
       </div>
     </div>
         </div>

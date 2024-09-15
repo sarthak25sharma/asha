@@ -9,14 +9,16 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 const Hero = () => {
   const [listening, setListening] = useState(false); // Track if recognition is listening
   const [transcript, setTranscript] = useState('');  // Store the transcript
-  const [location, setLocation] = useState(null); // Store the location data
+  //const [location, setLocation] = useState(null); // Store the location data
   const [area, setArea] = useState(null); // Store the area information
   const [showModal, setShowModal] = useState(false);
+  const [timer, setTimer] = useState(5);
+  const [location, setLocation] = useState(null);
   const normalize = (word) => stemmer(word.toLowerCase());
 
   // Function to handle voice input
   const handleVoiceInput = () => {
-    alert("ok");
+    
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     const recognition = new SpeechRecognition();
     recognition.lang = 'en-US';
@@ -57,24 +59,56 @@ const Hero = () => {
     // If two or more trigger words are found, analyze the context
     if (triggerCount > 0) {
       setShowModal(true);
-    } 
+      setTimer(5);
+      getUserLocation();  // Reset the timer to 5 seconds when the modal is shown
+    }
     analyzeContext(sentence);
   };
+  useEffect(() => {
+    if (showModal && timer > 0) {
+      const countdown = setTimeout(() => setTimer(timer - 1), 1000);
+      return () => clearTimeout(countdown);
+    } else if (timer === 0 && showModal) {
+      handleModalClose('no');  // Automatically choose "No" if the timer reaches 0
+    }
+  }, [timer, showModal]);
   const handleModalClose = (answer) => {
     setShowModal(false);
     if (answer === 'no') {
       sendHelpEmail();  // Call the function to send the help email if unsafe
     }
   };
+  const getUserLocation = () => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const { latitude, longitude } = position.coords;
+          setLocation({ latitude, longitude });
+        },
+        (error) => {
+          console.error("Error getting location:", error);
+          setLocation(null);
+        }
+      );
+    } else {
+      console.error("Geolocation is not supported by this browser.");
+      setLocation(null);
+    }
+  };
 
   async function sendHelpEmail() {
+        const locationMessage = location
+      ? `User's location: Latitude ${location.latitude}, Longitude ${location.longitude}`
+      : 'Location not available.';
+
+    const emailBody = `Urgent help needed. Please help me!\n\n${locationMessage}`;
     try {
       const response = await fetch('http://localhost:5000/send-help-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ message: 'Urgent help needed. Please help me!' })
+        body: JSON.stringify({ message: emailBody })
       });
 
       const result = await response.json();
@@ -87,7 +121,6 @@ const Hero = () => {
 
   async function analyzeContext(sentence) {
     try {
-      alert('hallo')
       const response = await fetch('http://localhost:5000/analyze', {
         method: 'POST',
         headers: {
@@ -98,7 +131,10 @@ const Hero = () => {
 
       const result = await response.json();
       if (result.context === 'UNSAFE') {
-        alert('UNSAFE: The context of the sentence indicates potential danger.');
+        // Same behavior as trigger > 0 (show modal and start timer)
+        setShowModal(true);
+        setTimer(5);  // Reset the timer to 5 seconds when UNSAFE context is detected
+        getUserLocation(); 
       } else {
         alert('SAFE: The context does not indicate immediate danger.');
       }
@@ -188,6 +224,7 @@ const Hero = () => {
   const reverseGeocode = async (latitude, longitude) => {
     try {
       const response = await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}&zoom=18&addressdetails=1`);
+      if (!response.ok) throw new Error('Network response was not ok.');
       const data = await response.json();
       const address = data.address;
       setArea(`${address.city || ''}, ${address.state || ''}, ${address.country || ''}`);
@@ -201,14 +238,14 @@ const Hero = () => {
     <div>
       <div className='phone'> 
       <button className='location-info' onClick={getLocation}>
-        <FontAwesomeIcon icon={faLocationDot} className="icon location-icon" />
-      </button>
-
-      {location && (
+        <FontAwesomeIcon icon={faLocationDot} className="icon location-icon" />{location && (
         <div>
           <p>Area: {area}</p>
         </div>
       )}
+      </button>
+
+      
         <div className='top-h'>
           <h2>tap to enable safe mode</h2>
         </div>
@@ -231,6 +268,7 @@ const Hero = () => {
       <p>Are you safe?</p>
       <button onClick={() => handleModalClose('yes')}>Yes</button>
       <button onClick={() => handleModalClose('no')}>No</button>
+      <p>Auto selecting No in: {timer} seconds</p>
     </div>
   </>
 )}

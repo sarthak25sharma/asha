@@ -75,4 +75,7 @@
     color: #b84f4f;
     margin-top: 5px;
   }
+  body {
+    font-family: 'Consolas', monospace;
+  }
   

@@ -166,6 +166,9 @@
   padding: 20px;
   margin: auto;
 }
+body {
+  font-family: 'Consolas', monospace;
+}
   
 
   

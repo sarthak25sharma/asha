@@ -7,7 +7,7 @@ function Info() {
       <div className="profile-card">
             <div className="profile-info">
               <img
-                src="https://via.placeholder.com/100"
+                src={logo}
                 alt="Profile"
                 className="profile-image"
               />
@@ -26,7 +26,7 @@ function Info() {
               </ul>
 
               <p className="detail-label">Birth mark</p>
-              <p className="birthmark-detail"><strong>Brown Patch under right arm</strong></p>
+              <p className="birthmark-detail"><strong>Scar on right arm</strong></p>
             </div>
           </div>
           
