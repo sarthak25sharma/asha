@@ -1,7 +1,8 @@
 # ASHA Automated SOS and Help APP
 # Code is in Master branch
 ## Overview
-## Prototype-> https://www.figma.com/slides/HsqErX6LeoSmrogPMAzpS0/asha%3A-automated-sos-and-help-app?node-id=18-1370&t=ST3AAkYZO4FS2zAJ-1
+## Slides-> https://www.figma.com/slides/HsqErX6LeoSmrogPMAzpS0/asha%3A-automated-sos-and-help-app?node-id=18-1370&t=ST3AAkYZO4FS2zAJ-1
+## Prototype -> https://www.figma.com/proto/jfPuCh5woaRNLCRHlSkICl/ASHA?node-id=11-338&source=email_invite&starting-point-node-id=11%3A338&t=NGQEqexXa1tsuBzM-1
 ASHA (Automated SOS and Help App) is a sophisticated application designed to enhance user safety through automated SOS alerts and contextual analysis of voice inputs. Leveraging modern technologies and machine learning, ASHA aims to provide timely help and support in emergency situations.
 
 ## Features
