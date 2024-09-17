@@ -18,7 +18,7 @@ ASHA (Automated SOS and Help App) is a sophisticated application designed to enh
   - **React:** For building the user interface.
   - **CSS:** For styling and layout.
  
--**Rest APIs:**
+- **Rest APIs:**
   -**SpeechRecognition**
   -**Nominatim**
 
