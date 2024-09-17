@@ -17,11 +17,14 @@ ASHA (Automated SOS and Help App) is a sophisticated application designed to enh
 - **Frontend:**
   - **React:** For building the user interface.
   - **CSS:** For styling and layout.
+ 
+- **Rest APIs:**
+  -**SpeechRecognition**
+  -**Nominatim**
 
 - **Backend:**
-  - **Node.js:** Server-side JavaScript runtime.
-  - **Express:** Web application framework for Node.js.
-  - **MongoDB:** NoSQL database for storing user data and app information.
+  - **Pytho:** Python based Backend.
+  
 
 - **Machine Learning:**
   - **Support Vector Machines (SVM):** For analyzing and classifying text data.
